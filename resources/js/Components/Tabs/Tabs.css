@@ -1,0 +1,17 @@
+.tabs__header {
+    border-bottom: 1px solid var(--blue-grey-primary);
+}
+
+.tabs__tab {
+    cursor: pointer;
+    border-right: 1px solid var(--blue-grey-dark);
+    padding: 0.5rem 1rem;
+}
+
+.tabs__tab:hover {
+    background-color: var(--blue-grey-light);
+}
+
+.tabs__tab.tabs__tab--active {
+    background-color: var(--blue-grey-light);
+}

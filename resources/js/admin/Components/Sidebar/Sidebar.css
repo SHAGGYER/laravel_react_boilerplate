@@ -1,0 +1,120 @@
+.side-drawer {
+    position: absolute;
+    height: 100%;
+    background: var(--blue-grey-primary);
+    top: 0;
+    left: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 990;
+}
+
+.side-drawer--inactive {
+    left: -300px;
+}
+
+.sidebar__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.7rem;
+    font-size: 16px;
+    background-color: var(--blue-grey-dark);
+}
+
+.sidebar__top-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.sidebar__top-name {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.sidebar__nav {
+    list-style-type: none;
+    overflow-y: auto;
+}
+
+.sidebar__nav::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.sidebar__nav::-webkit-scrollbar-track {
+    background: var(--blue-grey-light);
+}
+
+/* Handle */
+.sidebar__nav::-webkit-scrollbar-thumb {
+    background: var(--blue-grey-dark);
+}
+
+/* Handle on hover */
+.sidebar__nav::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-grey-dark);
+}
+
+.sidebar__nav > .sidebar__nav-item {
+    border-bottom: 1px solid var(--blue-grey-light);
+}
+
+.sidebar__nav-link {
+    line-height: 2.5;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+    padding: 5px 10px;
+    border-left: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar__nav-link:hover {
+    background-color: var(--blue-grey-dark);
+    border-left: 5px solid var(--blue-grey-light);
+}
+
+
+.sidebar__bottom {
+    background-color: var(--blue-primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Spartan ExtraLight", sans-serif;
+}
+
+.sidebar__bottom:hover {
+    background-color: var(--blue-dark);
+}
+
+.sidebar__submenu {
+    display: none;
+    padding-left: 1rem;
+    list-style-type: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar__submenu--active {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__submenu .sidebar__nav-link {
+    border-left: none;
+    border-right: 5px solid transparent;
+}
+
+.sidebar__submenu .sidebar__nav-link:hover {
+    border-right: 5px solid var(--teal-light);
+}
