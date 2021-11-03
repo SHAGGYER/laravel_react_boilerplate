@@ -29,6 +29,6 @@
         "react-js-pagination": "^3.0.3",
         "react-router-dom": "^5.2.0",
         "styled-components": "^5.1.1",
-        "validator": "^13.1.1"
+        "validator": "^13.7.0"
     }
 }
